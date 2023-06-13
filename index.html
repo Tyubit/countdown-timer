@@ -5,45 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <title>Frontend Mentor | Launch countdown timer</title>
 
 </head>
 <body>
-  <div class="background">
-    <img src="./images/bg-stars.svg" alt="bg-stars" >
-    <img src="./images/pattern-hills.svg" alt="hills" id="hills">
-  </div>
+  <div class="background-stars"></div>
+  <div class="background-hills"></div>
 
-  <div class="section">
-    <h2 id="title">We're launching soon</h2>
+  <div class="container">
+      <h3 class="header" id="title">We're launching soon</h3>
 
     <div class="timer">
-      <div class="days">
-        <div class="timer-elemet">
-          <div class="number">08</div>
-          <div class="time-design">
-            <div class="top-part"></div>
-            <div class="bottom-part"></div>
-          </div>
+      <div class="timer-countdown" id="days">
+        <div class="time">08</div>
+        <div class="countdown-bg">
+          <div id="upper-bg"></div>
+          <div id="lower-bg"></div>
         </div>
-        <h4 class="number-title">Days</h4>
+        <div class="time-unit">days</div>
       </div>
-      <div class="hours">
-        <h3>Hours</h3>
+      
+      <div class="timer-countdown" id="hours">
+        <div class="time">08</div>
+        <div class="countdown-bg">
+          <div id="upper-bg"></div>
+          <div id="lower-bg"></div>
+        </div>
+        <div class="time-unit">hours</div>
       </div>
-      <div class="minutes">
-        <h3>Minutes</h3>
+
+      <div class="timer-countdown" id="minutes">
+        <div class="time">08</div>
+        <div class="countdown-bg">
+          <div id="upper-bg"></div>
+          <div id="lower-bg"></div>
+        </div>
+        <div class="time-unit">minutes</div>
       </div>
-      <div class="seconds">
-        <h3>Seconds</h3>
+
+      <div class="timer-countdown" id="seconds">
+        <div class="time">08</div>
+        <div class="countdown-bg">
+          <div id="upper-bg"></div>
+          <div id="lower-bg"></div>
+        </div>
+        <div class="time-unit">seconds</div>
       </div>
     </div>
+
+    <div id="footer">
+      <img src="./images/icon-instagram.svg" alt="instagram" class="social-media">
+      <img src="./images/icon-pinterest.svg" alt="pinterest" class="social-media">
+      <img src="./images/icon-facebook.svg" alt="pinterest" class="social-media">
+    </div>
   </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Eli Kovalev</a>.
-  </div>
+
+  <script src="./script.js"></script>
 </body>
 </html>
